@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <script>
+    function autoClick(){
+      document.getElementById("mojDug").click();
+      
+    }
+    </script>
+  <meta charset="utf-8">
+  <title>RBG</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+</head>
+
+<body onload="setInterval('autoClick()', 6000)">
+  <div class="blob-wrapper">
+    <div class="blob" id="slika"></div>
+  </div>
+  <p class="style">border-radius: <span>Blobovi su zabavni :D</span>;</p>
+  <button id="mojDug" onclick="generateBlob();promeniSliku()">Click Me!</button>
+
+
+
+</body>
+
+</html>
